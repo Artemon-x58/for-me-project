@@ -5,3 +5,4 @@ import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
 
 import './js/test';
+import './js/mobile-menu';
