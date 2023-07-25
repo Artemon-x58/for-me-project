@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
-    <link rel="stylesheet" href="/for-me-project/assets/style-ec18d2dd.css">
+    <script type="module" crossorigin src="/for-me-project/assets/favorites-42b36a66.js"></script>
+    <link rel="stylesheet" href="/for-me-project/assets/favorites-00e108d6.css">
   </head>
   <body>
     <header>
       <div class="container">
     <div class="header">
-    <a class="header-logo" href=""><span class="header-logo-acent">tasty</span>treats.</a>
+      <ul class="nav-header-list">
+        <li class="header-nav">
+      <a class="header-link-nav" href="../index.html">Home</a>
+        </li>
+        <li class="header-nav">
+          <a class="header-link-nav" href="../favorites.html">Favorites</a>
+        </li>
+      </ul>
+    <a class="header-logo" href="../index.html"><span class="header-logo-acent">tasty</span>treats.</a>
     <div class="header-wrap">
         <button type="button" class="header-icon-order-basket-btn">
 <svg class="header-icon-order-basket" width="24" height="24">
@@ -25,6 +35,12 @@
 </svg>
 </button>
 </div>
+
+<label class="checkbox-ios-desktop">
+  <input type="checkbox">
+  <span class="checkbox-ios-switch"></span>
+</label>
+
 </div>
 <div>
     <div class="mobile-menu js-menu-container" id="mobile-menu">
@@ -36,10 +52,10 @@
               </button>
     <ul class="list icon-mobile-menu">
       <li class="mobile-menu-home">
-<a href="">Home</a>
+<a href="../index.html">Home</a>
       </li>
       <li class="mobile-menu-favorites">
-        <a href="">Favorites</a>
+        <a href="../favorites.html">Favorites</a>
       </li>
     </ul>
     <label class="checkbox-ios">
@@ -51,13 +67,31 @@
   </div>
 </div>
 
+<!-- ---------------------------------------------------------------TABLET AND DESKTOP -->
+
+
     </header>
     <main>
-      
+      <div class="container">
+    <picture>
+        <source media="(min-width:1200px)" srcset="../img/hero-fav-desk-x1.jpg 1x,
+        ../img/hero-fav-desk-x2.jpg 2x
+          ">
+        <source media="(min-width:768px)" srcset="
+        ../img/hero-fav-tab-x1.jpg 1x,
+        ../img/hero-fav-tab-x2.jpg 2x
+          ">
+        <img class="ts-img" srcset="
+        ../img/hero-fav-mob-x1.jpg 1x,
+        ../img/hero-fav-mob-x2.jpg 2x
+          " src="../img/hero-fav-mob-x1.jpg" alt="hero-picture" loading="lazy">
+      </picture>
+</div>
       
       
     
     
     </main>
+    
   </body>
 </html>
