@@ -12,7 +12,7 @@
       const scrollLockMethod = !isMenuOpen
         ? 'disableBodyScroll'
         : 'enableBodyScroll';
-      bodyScrollLock[scrollLockMethod](document.body);
+      // bodyScrollLock[scrollLockMethod](document.body);
     };
   
     openMenuBtn.addEventListener('click', toggleMenu);
@@ -23,7 +23,25 @@
       if (!e.matches) return;
       mobileMenu.classList.remove('is-open');
       openMenuBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
+      // bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
   
+
+
+  const linkHome = document.querySelector(".header-link-nav-home");
+  const linkFavorites = document.querySelector(".header-link-nav-favorites");
+
+
+
+  // linkHome.addEventListener("click", (e) => {
+  //   // e.preventDefault()
+  //   linkHome.classList.add("current");
+  //   linkFavorites.classList.remove("current");
+  // });
+
+  // linkFavorites.addEventListener("click", (e) => {
+  //   // e.preventDefault()
+  //   linkFavorites.classList.add("current");
+  //   linkHome.classList.remove("current");
+  // })
